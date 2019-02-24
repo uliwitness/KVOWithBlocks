@@ -88,7 +88,7 @@ static void* kJCSKVOWithBlocksObserverAssociatedObjectKey = &kJCSKVOWithBlocksOb
     }
 
     return [_queue addOperationWithBlock:^{
-        _block(change);
+        self->_block(change);
     }];
 }
 
